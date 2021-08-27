@@ -1,0 +1,179 @@
+/*.navbar {
+  height: 100px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+}
+
+
+
+.navbar-font {
+  color: #fff;
+}
+*/
+
+h5 {
+  font-size: 20px; /**/
+  position: fixed;
+  left: 20px;
+  color: #fff;
+  width: 100px;
+  margin-top: 5px;
+}
+.navbar {
+  background-color: black; /**/
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.menu-icon {
+  color: #ffff; /**/
+  display: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+
+.nav-menu {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  grid-template-columns: repeat(5, auto);
+  width: 75vw;
+  grid-gap: 0px;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: end;
+}
+
+.list-item {
+  /*each element of the menu has this class*/
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  /**/
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 0.2rem 1rem;
+}
+.nav-links:hover {
+  background-color: #133361;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+button {
+  height: 30px;
+  width: 100%;
+  color: black;
+  border-radius: 5px;
+  border: 0;
+  padding: 0.2rem 0.2rem;
+}
+
+button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transform: translate(-50%, 25%);
+  }
+
+  .nav-menu {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    left: -100%;
+    height: 95vh;
+    width: 100%;
+    margin: 0px 0;
+    transition: all 1s in ease;
+  }
+  /*use z indez*/
+  .nav-menu.active {
+    background-color: #242f55;
+    height: 80vh;
+    padding: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+  }
+
+  .btn-link {
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    font-size: 20px;
+    background-color: #1c2237;
+    color: #ffff;
+    height: inherit;
+    width: inherit;
+  }
+
+  button:hover {
+    background-color: #1d2d44;
+  }
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+/*
+
+
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  }
+}*/

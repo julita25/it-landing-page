@@ -1,0 +1,253 @@
+.main-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.wrapper > h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 5rem;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 100%;
+  height: 60rem;
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fashion-wrapper {
+  background-color: blanchedalmond;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: none;
+}
+
+.long-wrap {
+  background-color: brown;
+  height: 280px;
+  border-style: none;
+}
+
+.short-wrap {
+  background-color: brown;
+  display: flex;
+  justify-content: space-evenly;
+  object-fit: contain;
+  border-style: none;
+}
+
+.wrap2 {
+  z-index: 2;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.pic-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-items {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  z-index: 1;
+  transition: all 0.2s linear;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gallery-items:hover {
+  transform: scale(1.1);
+}
+
+.support-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  background-color: white;
+  transition: all 0.2s linear;
+  overflow: hidden;
+}
+
+.support-item:hover {
+  transform: scale(1.1);
+}
+
+.long-wrap p,
+.short-wrap p {
+  width: fit-content;
+  position: relative;
+  z-index: 555;
+  margin-top: -30px;
+  font-size: 22px;
+  background-color: #f3f2f2;
+  opacity: 0.7;
+}
+
+/**/
+
+.wrapper-1 {
+  width: 100%;
+  height: 40vh;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper-1 > h1 {
+  color: #fff;
+  font-family: "Roboto";
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.companies-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.company-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  object-fit: contain;
+  justify-content: space-evenly;
+}
+.company-wrap > img {
+  width: 160px;
+  object-fit: cover;
+}
+/*.companies-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.companies-wrap > img {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+} /*img:hover {
+  transform: scale(1.01);
+  z-index: 9999;
+}*/
+
+@media only screen and (max-width: 1000px) {
+  .fashion-wrapper {
+    width: 80%;
+  }
+  .wrapper-1 > h1 {
+    font-size: 30px;
+  }
+  .long-wrap {
+    height: 220px;
+  }
+
+  .short-wrap {
+    height: 200px;
+  }
+  .long-wrap p,
+  .short-wrap p {
+    font-size: 18px;
+    margin-top: -25px;
+  }
+  .company-wrap > img {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    padding: 40px 10px;
+  }
+
+  .fashion-wrapper {
+    width: 90%;
+  }
+
+  .long-wrap {
+    height: 220px;
+  }
+
+  .short-wrap {
+    height: 190px;
+  }
+  .long-wrap p,
+  .short-wrap p {
+    font-size: 17px;
+    margin-top: -22px;
+  }
+  .wrapper-1 {
+    height: 50vh;
+  }
+  .companies-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+  }
+  .company-wrap {
+    padding: 10px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding: 10px 10px;
+  }
+  .wrapper-1 > h1 {
+    font-size: 20px;
+  }
+
+  .short-wrap {
+    height: 180px;
+  }
+  .long-wrap {
+    height: 180px;
+  }
+  .long-wrap p,
+  .short-wrap p {
+    font-size: 14px;
+    margin-top: -20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wrapper > h1 {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+  .wrapper {
+    height: 42rem;
+  }
+
+  .long-wrap {
+    height: 150px;
+  }
+
+  .short-wrap {
+    height: 130px;
+  }
+  .long-wrap p,
+  .short-wrap p {
+    font-size: 10px;
+    margin-top: -15px;
+  }
+
+  .company-wrap > img {
+    width: 110px;
+    height: 110px;
+  }
+}
